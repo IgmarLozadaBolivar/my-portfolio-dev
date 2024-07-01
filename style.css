@@ -24,7 +24,8 @@ body {
 .item a {
     text-decoration: none;
     color: white;
-    font-weight: 400;
+    font-weight: 500;
+    opacity: 85%;
 }
 
 .item.active a {
@@ -84,7 +85,7 @@ body {
 }
 
 .status:hover {
-    color: #255784;
+    color: #fff;
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
     transition-delay: 1s;
@@ -148,4 +149,63 @@ body {
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
+}
+
+.description h1 {
+    font-size: 48px;
+    color: white;
+    position: absolute;
+    top: 28%;
+    margin-top: 5px;
+    left: 21%;
+}
+
+.description p {
+    font-size: 20px;
+    color: white;
+    position: absolute;
+    top: 38%;
+    margin-top: 10px;
+    left: 21%;
+    line-height: 1.85rem;
+}
+
+.description strong {
+    color: #2196f3;
+}
+
+.links-actions {
+    font-size: 14px;
+    color: white;
+    position: absolute;
+    top: 54%;
+    margin-top: 10px;
+    left: 21%;
+    display: flex;
+    justify-content: center;
+}
+
+.links-actions a {
+    text-decoration: none;
+}
+
+.links-actions button {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(75 85 99);
+    border-radius: 15px;
+    background: #1F2937;
+    color: #fff;
+    padding: 7px 17px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.links-actions svg {
+    margin-right: 8px;
+}
+
+.special {
+    margin-left: 10px;
 }
