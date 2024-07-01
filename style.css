@@ -6,7 +6,8 @@
 
 body {
     font-family: "Onest", sans-serif;
-    background-color: #15182e;
+    background: radial-gradient(circle, rgb(17, 22, 38) 0%, rgba(21,24,46,1) 100%);
+    min-height: 100vh;
 }
 
 .listItems {
@@ -59,7 +60,7 @@ body {
 
 .profile {
     margin-top: 100px;
-    margin-left: 335px;
+    margin-left: 21%;
 }
 
 .profile img {
@@ -208,4 +209,245 @@ body {
 
 .special {
     margin-left: 10px;
+}
+
+.experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 23%;
+    margin-left: -39%;
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: white;
+}
+
+.timeline {
+    position: relative;
+    width: 2px;
+    height: 300px;
+    background: #444;
+    margin-left: 21%;
+}
+
+.timeline::before,
+.timeline::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 11px;
+    height: 11px;
+    background: #ffcc00;
+    border-radius: 50%;
+}
+
+.timeline::before {
+    top: 20px;
+}
+
+.timeline::after {
+    bottom: 110px;
+}
+
+.timeline-item {
+    position: absolute;
+    top: 89%;
+    left: 25%;
+    bottom: 0;
+    color: white;
+    line-height: 0.5rem;
+}
+
+.timeline-item-2 {
+    position: absolute;
+    top: 110%;
+    left: 25%;
+    bottom: 0;
+    color: white;
+    line-height: 0.5rem;
+}
+
+.timeline-item .title,
+.timeline-item-2 .title {
+    color: #ffcc00;
+    font-size: 20px;
+}
+
+.timeline-item .subtitle,
+.timeline-item-2 .subtitle {
+    font-size: 20px;
+}
+
+.available {
+    color: #D1D5D8;
+}
+
+.fix-line {
+    line-height: 1%;
+}
+
+.timeline-item .description,
+.timeline-item-2 .description {
+    width: 60%;
+    font-size: 16px;
+    color: #D1D5D8;
+    margin-top: -85px;
+    margin-left: 50%;
+    line-height: 1.5rem;
+}
+
+.timeline-item .link,
+.timeline-item-2 .link {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 50%;
+    line-height: 1.5rem;
+    text-decoration: none;
+    color: rgb(254 240 138);
+}
+
+.link:hover {
+    color: rgb(234 179 8);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-left: -48%;
+    margin-bottom: 20px;
+    font-size: 21px;
+    color: white;
+}
+
+.project_1 img {
+    border-radius: 15px;
+    height: 230px;
+    width: 400px;
+    margin-top: -20px;
+    margin-left: 20%;
+}
+
+.project_1 h3 {
+    color: white;
+    font-size: 24px;
+    margin-top: -220px;
+    margin-left: 50%;
+}
+
+.project_1 .parrafo {
+    color: white;
+    font-size: 16px;
+    margin-left: 50%;
+}
+
+.project_1 ul {
+    margin-top: -20px;
+    display: flex;
+    margin-left: 48%;
+    margin-bottom: -20px;
+}
+
+.project_2 img {
+    border-radius: 15px;
+    height: 200px;
+    width: 400px;
+    margin-top: 200px;
+    margin-left: 20%;
+}
+
+.project_2 {
+    border-radius: 15px;
+    height: 230px;
+    width: 400px;
+    margin-top: -100px;
+    margin-left: 15%;
+}
+
+.project_2 h3 {
+    color: white;
+    font-size: 24px;
+    margin-top: -220px;
+    margin-left: 140%;
+    width: 140%;
+}
+
+.project_2 .parrafo {
+    color: white;
+    font-size: 16px;
+    margin-left: 140%;
+    width: 140%;
+}
+
+.project_2 ul {
+    margin-top: -20px;
+    display: flex;
+    margin-left: 131%;
+    margin-bottom: -20px;
+}
+
+.project_1 li,
+.project_2 li {
+    list-style: none;
+    color: white;
+    margin-left: 20px;
+}
+
+.links-actions-1 {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 120px;
+    display: flex;
+    justify-content: center;
+}
+
+.links-actions-1 a,
+.links-actions-2 a {
+    text-decoration: none;
+}
+
+.links-actions-1 button {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(75 85 99);
+    border-radius: 15px;
+    background: #1F2937;
+    color: #fff;
+    padding: 5px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.links-actions-2 button {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgb(75 85 99);
+    border-radius: 15px;
+    background: #1F2937;
+    color: #fff;
+    padding: 5px 18px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 141%;
+}
+
+.links-actions-1 button:hover,
+.links-actions-2 button:hover {
+    border: 1px solid #1F2937;
+}
+
+.links-actions-1 svg,
+.links-actions-2 svg {
+    margin-right: 8px;
 }
