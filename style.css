@@ -6,8 +6,12 @@
 
 body {
     font-family: "Onest", sans-serif;
-    background: radial-gradient(circle, rgb(17, 22, 38) 0%, rgba(21,24,46,1) 100%);
+    background: radial-gradient(circle, rgb(17, 22, 38) 0%, rgba(21, 24, 46, 1) 100%);
     min-height: 100vh;
+}
+
+section {
+    flex: 1;
 }
 
 .listItems {
@@ -329,11 +333,16 @@ body {
 }
 
 .project_1 img {
-    border-radius: 15px;
+    border-radius: 30px;
     height: 230px;
     width: 400px;
     margin-top: -20px;
     margin-left: 20%;
+    transition: transform 0.9s ease;
+}
+
+.project_1 img:hover {
+    transform: scale(0.9);
 }
 
 .project_1 h3 {
@@ -357,11 +366,16 @@ body {
 }
 
 .project_2 img {
-    border-radius: 15px;
-    height: 200px;
+    border-radius: 30px;
+    height: 230px;
     width: 400px;
-    margin-top: 200px;
+    margin-top: 190px;
     margin-left: 20%;
+    transition: transform 0.9s ease;
+}
+
+.project_2 img:hover {
+    transform: scale(0.9);
 }
 
 .project_2 {
@@ -450,4 +464,91 @@ body {
 .links-actions-1 svg,
 .links-actions-2 svg {
     margin-right: 8px;
+}
+
+.aboutme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 17%;
+    margin-left: -48%;
+    font-size: 21px;
+    color: white;
+}
+
+.about {
+    color: white;
+    margin-left: 20%;
+}
+
+.about strong {
+    color: #1f7fceba;
+}
+
+.img-style {
+    position: relative;
+    top: -260px;
+    left: 61%;
+    width: 250px;
+    height: 250px;
+    border: 0.5px groove rgba(128, 128, 128, 0.4);
+    border-radius: 15px;
+    overflow: hidden;
+    transform: rotateZ(5deg);
+    box-shadow: 14px 14px 20px 0 rgba(24, 103, 168, 0.3);
+    background-color: #141414;
+    padding: .5rem;
+}
+
+.img-style img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+footer {
+    margin-top: -150px;
+    font-size: 14px;
+    display: flex;
+    padding: 10px 0;
+    justify-content: center;
+    color: #D1D5D8;
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    max-width: 990px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+footer span {
+    flex: 1;
+}
+
+.action-footer {
+    position: relative;
+    left: -50px;
+}
+
+.action-footer ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.action-footer li {
+    list-style: none;
+    margin-left: 15px;
+}
+
+.action-footer a {
+    color: #D1D5D8;
+    text-decoration: none;
+}
+
+.action-footer a:hover {
+    text-decoration: underline;
 }
