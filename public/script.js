@@ -1,6 +1,7 @@
 const lightModeButton = document.getElementById('light-mode');
 const darkModeButton = document.getElementById('dark-mode');
 const translateButtons = document.querySelectorAll('.translate-button');
+const mailtoButton = document.getElementById('mailto');
 
 lightModeButton.addEventListener('click', (e) => {
     e.preventDefault();
@@ -10,6 +11,24 @@ lightModeButton.addEventListener('click', (e) => {
 darkModeButton.addEventListener('click', (e) => {
     e.preventDefault();
     document.body.classList.add('dark');
+});
+
+mailtoButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const message = `
+        <p>Correo: losadabolivar@gmail.com</p>
+        <p>Teléfono: +57 324 401 9649</p>
+    `;
+    Swal.fire({
+        title: 'Contacto!',
+        html: message,
+        icon: 'info',
+        showCancelButton: false,
+        showConfirmButton: true,
+        confirmButtonText: `
+            👌 Great!
+        `,
+    });
 });
 
 translateButtons.forEach(button => {
