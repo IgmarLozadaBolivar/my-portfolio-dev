@@ -50,3 +50,13 @@ translateButtons.forEach(button => {
         });
     });
 });
+
+document.addEventListener("scroll", function() {
+    const mainHeader = document.getElementById("main-header");
+    
+    if (window.scrollY > mainHeader.offsetHeight) {
+        mainHeader.classList.add("scrolled");
+    } else {
+        mainHeader.classList.remove("scrolled");
+    }
+});
